@@ -1,0 +1,139 @@
+header {
+  background-image: url('../global/img/header-bg.jpg');
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  text-align: center;
+  color: white;
+}
+
+header .apresentacao {
+  display: block;
+  margin: auto;
+  width: 100%;
+}
+
+.logo {
+  height: 80%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+header .intro-text {
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+header .intro-text .intro-lead-in {
+  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: italic;
+  font-size: 22px;
+  line-height: 22px;
+  margin-bottom: 25px;
+}
+header .intro-text .intro-heading {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 33px;
+  line-height: 50px;
+}
+
+.linha-topo {
+  display: inline-flex;
+}
+
+#texto-topo {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 25px;
+  margin-top: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+#do {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 24px;
+    margin-top: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#cidade {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: 10px;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  header .apresentacao {
+    margin: auto;
+    width: 90%;
+    display: flex;
+    margin-bottom: 75px;
+  }
+
+  .logo {
+    height: 80%;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  header .intro-text {
+    padding-top: 150px;
+    padding-bottom: 200px;
+  }
+  header .intro-text .intro-lead-in {
+    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: italic;
+    font-size: 40px;
+    line-height: 40px;
+  }
+  header .intro-text .intro-heading {
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 85px;
+    line-height: 75px;
+    padding-bottom: 50px;
+    width: 85%;
+    height: 80px;
+  }
+
+  #texto-topo {
+    font-family: Calibri, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+  }
+
+  #do {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 50px;
+    margin-top: 20px;
+    margin-left: 7px;
+    margin-right: 7px;
+}
+
+  #cidade {
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 15px;
+    margin-top: 10px;
+  }
+
+  .img-topo {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 40px;
+  }
+
+}
