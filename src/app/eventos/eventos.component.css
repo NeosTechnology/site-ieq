@@ -1,0 +1,35 @@
+.amarelo {
+    
+    color: #FFEE58;
+}
+
+.azul {
+    color: #29B6F6;
+}
+
+.roxo {
+    color: #7E57C2;
+}
+
+.vermelho {
+    color: #EF5350;
+}
+
+.service-heading {
+  margin: 15px 0;
+  text-transform: none;
+}
+
+.clock {
+    font-size: xx-large;
+}
+
+.col-md-4 {
+    margin-bottom: 45px;
+}
+
+@media (min-width: 768px) {
+    .col-md-4 {
+        width: 20%;
+    }
+}
