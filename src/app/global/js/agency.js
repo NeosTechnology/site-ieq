@@ -1,33 +1,38 @@
 
+var app = angular.module('site-ieq', []);
 
-$('a.page-scroll').click(function(){
-    alert("teste");
-});
 
-// jQuery for page scrolling feature - requires jQuery Easing plugin
-$('a.page-scroll').bind('click', function(event) {
-    var $anchor = $(this);
-    $('html, body').stop().animate({
-        scrollTop: ($($anchor.attr('href')).offset().top - 50)
-    }, 1250, 'easeInOutExpo');
-    event.preventDefault();
-});
 
-// Highlight the top nav as scrolling occurs
-$('body').scrollspy({
-    target: '.navbar-fixed-top',
-    offset: 51
-});
+angular.module("site-ieq", [])
+    .controller("body", function($scope){
 
-// Closes the Responsive Menu on Menu Item Click
-$('.navbar-collapse ul li a').click(function(){ 
-        $('.navbar-toggle:visible').click();
-});
+        // jQuery for page scrolling feature - requires jQuery Easing plugin
+        $('a.page-scroll').bind('click', function(event) {
+            var $anchor = $(this);
+            $('html, body').stop().animate({
+                scrollTop: ($($anchor.attr('href')).offset().top - 50)
+            }, 1000, 'easeInOutExpo');
+            event.preventDefault();
+        });
 
-// Offset for Main Navigation
-$('#mainNav').affix({
-    offset: {
-        top: 100
-    }
-});
+        // Highlight the top nav as scrolling occurs
+        $('body').scrollspy({
+            target: '.navbar-fixed-top',
+            offset: 51
+        });
 
+        // Closes the Responsive Menu on Menu Item Click
+        $('.navbar-collapse ul li a').click(function(){ 
+                $('.navbar-toggle:visible').click();
+        });
+
+        // Offset for Main Navigation
+        $('#mainNav').affix({
+            offset: {
+                top: 100
+            }
+        });
+
+
+
+    });
