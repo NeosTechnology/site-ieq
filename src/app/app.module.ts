@@ -10,6 +10,8 @@ import { EventosComponent } from './eventos/eventos.component';
 import { DepartamentosComponent } from './departamentos/departamentos.component';
 import { MissoesComponent } from './missoes/missoes.component';
 import { LocalComponent } from './local/local.component';
+import { LinkComponent } from './link/link.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { LocalComponent } from './local/local.component';
     EventosComponent,
     DepartamentosComponent,
     MissoesComponent,
-    LocalComponent
+    LocalComponent,
+    LinkComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
