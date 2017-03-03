@@ -12,6 +12,7 @@ import { MissoesComponent } from './missoes/missoes.component';
 import { LocalComponent } from './local/local.component';
 import { LinkComponent } from './link/link.component';
 import { FooterComponent } from './footer/footer.component';
+import { TeamComponent } from './team/team.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { FooterComponent } from './footer/footer.component';
     MissoesComponent,
     LocalComponent,
     LinkComponent,
-    FooterComponent
+    FooterComponent,
+    TeamComponent
   ],
   imports: [
     BrowserModule,
