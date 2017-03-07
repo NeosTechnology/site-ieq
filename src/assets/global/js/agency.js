@@ -33,6 +33,8 @@ angular.module("site-ieq", [])
             }
         });
 
-
+        $('#bodas-prata').modal({
+            show: 'true'
+        });
 
     });
