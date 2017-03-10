@@ -13,6 +13,12 @@ import { LocalComponent } from './local/local.component';
 import { LinkComponent } from './link/link.component';
 import { FooterComponent } from './footer/footer.component';
 import { TeamComponent } from './team/team.component';
+import { RouterModule, Routes } from '@angular/router';
+import { HomeComponent } from './home/home.component';
+
+const appRoutes: Routes = [
+  {path: '', component: HomeComponent},
+  { path: 'missoes', component: MissoesComponent }];
 
 @NgModule({
   declarations: [
@@ -25,9 +31,11 @@ import { TeamComponent } from './team/team.component';
     LocalComponent,
     LinkComponent,
     FooterComponent,
-    TeamComponent
+    TeamComponent,
+    HomeComponent
   ],
   imports: [
+    RouterModule.forRoot(appRoutes),
     BrowserModule,
     FormsModule,
     HttpModule
