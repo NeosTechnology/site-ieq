@@ -15,10 +15,11 @@ import { FooterComponent } from './footer/footer.component';
 import { TeamComponent } from './team/team.component';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
+import { MissionsComponent } from './missions/missions.component';
 
 const appRoutes: Routes = [
   {path: '', component: HomeComponent},
-  { path: 'missoes', component: MissoesComponent }];
+  { path: 'missoes', component: MissionsComponent }];
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ const appRoutes: Routes = [
     LinkComponent,
     FooterComponent,
     TeamComponent,
-    HomeComponent
+    HomeComponent,
+    MissionsComponent
   ],
   imports: [
     RouterModule.forRoot(appRoutes),
